@@ -1,0 +1,51 @@
+.video-placeholder {
+  border: 2px dashed rgba(149, 138, 184, 0.34);
+  border-radius: var(--radius-md);
+  min-height: 260px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 1rem;
+  color: var(--ink-mid);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.86), rgba(245, 205, 211, 0.22));
+}
+
+.tips-list {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.tips-list li {
+  margin-bottom: 0.6rem;
+}
+
+#gallery-page > .section:first-of-type {
+  background: linear-gradient(140deg, rgba(221, 216, 239, 0.18), rgba(247, 234, 213, 0.65));
+}
+
+#gallery-page > .section:nth-of-type(3) {
+  background: linear-gradient(145deg, rgba(139, 154, 117, 0.08), rgba(255, 246, 230, 0.58));
+}
+
+#gallery-page > .section:nth-of-type(4) {
+  background: linear-gradient(150deg, rgba(232, 144, 155, 0.1), rgba(149, 138, 184, 0.12));
+}
+
+#gallery-page .card {
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(149, 138, 184, 0.2);
+  border-left: 4px solid var(--lavender);
+  box-shadow: var(--shadow-soft);
+}
+
+#gallery-page .collection-card h3 {
+  color: var(--cherry);
+}
+
+#gallery-page .gallery-preview-card {
+  border: 1px solid rgba(232, 144, 155, 0.25);
+}
+
+#gallery-page .gallery-preview-caption {
+  background: rgba(63, 42, 35, 0.6);
+}

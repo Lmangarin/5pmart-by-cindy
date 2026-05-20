@@ -1,0 +1,129 @@
+.text-link {
+  font-weight: 700;
+  color: var(--terracotta);
+}
+
+.panel {
+  max-width: 860px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(63, 42, 35, 0.12);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  padding: 1.2rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.78rem;
+  color: var(--terracotta);
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+  transition: transform 180ms ease;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: var(--terracotta);
+  color: #fff;
+}
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.collection-card {
+  border-radius: var(--radius-md);
+}
+
+.latest-drop-note {
+  color: var(--brown-700);
+  max-width: 70ch;
+  margin-bottom: 1.4rem;
+}
+
+.latest-drop-link {
+  margin-top: 1.1rem;
+}
+
+.gallery-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.gallery-preview-card {
+  position: relative;
+  margin: 0;
+  min-height: 240px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid rgba(63, 42, 35, 0.15);
+  box-shadow: var(--shadow-soft);
+}
+
+.gallery-preview-media {
+  min-height: 240px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 1rem;
+  font-weight: 700;
+  color: var(--brown-700);
+  background:
+    linear-gradient(160deg, rgba(248, 242, 232, 0.95), rgba(255, 255, 255, 0.9)),
+    repeating-linear-gradient(45deg, rgba(139, 154, 117, 0.08) 0 10px, rgba(199, 119, 70, 0.08) 10px 20px);
+}
+
+.gallery-preview-caption {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 0.9rem 0.95rem;
+  color: #fff;
+  background: rgba(63, 42, 35, 0.5);
+  font-size: 0.92rem;
+  line-height: 1.4;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.gallery-preview-card:hover .gallery-preview-caption,
+.gallery-preview-card:focus-within .gallery-preview-caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 900px) {
+  .gallery-preview-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .gallery-preview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-preview-caption {
+    opacity: 1;
+    transform: none;
+  }
+}

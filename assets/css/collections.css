@@ -1,0 +1,36 @@
+#collections-page h1 {
+  margin-bottom: 0.6rem;
+}
+
+#collections-page .collection-card h3 {
+  min-height: 2.6em;
+}
+
+#collections-page > .section {
+  background: linear-gradient(145deg, rgba(245, 205, 211, 0.12), rgba(255, 246, 230, 0.72));
+}
+
+#collections-page .latest-drop-note {
+  color: var(--ink-mid);
+}
+
+#collections-page .collection-grid {
+  gap: 1.25rem;
+}
+
+#collections-page .collection-card {
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.9), rgba(200, 163, 158, 0.16));
+  border: 1px solid rgba(232, 144, 155, 0.24);
+  border-top: 4px solid var(--soft-pink);
+  box-shadow: var(--shadow-soft);
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+#collections-page .collection-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(149, 138, 184, 0.18);
+}
+
+#collections-page .collection-card h3 {
+  color: var(--cherry);
+}
